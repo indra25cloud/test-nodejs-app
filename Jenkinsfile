@@ -6,19 +6,19 @@ pipeline {
    
      stage('Install Dependencies') { 
         steps { 
-           bat 'npm install' 
+           sh 'npm install' 
         }
      }
      
      stage('Test') { 
         steps { 
-           bat 'echo "testing application..."'
+           sh 'echo "testing application..."'
         }
       }
 
          stage("Deploy application") { 
          steps { 
-           bat 'echo "deploying application..."'
+           sh 'echo "deploying application..."'
          }
 
      }
